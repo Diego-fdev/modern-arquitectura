@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       rel="stylesheet"
@@ -116,6 +120,119 @@
         &copy; modern arquitectura 2025
       </span>
     </div>
+    <section class="hero w-full h-[700px] lg:h-[740px] lg:pb-10">
+      <div class="swiper w-full h-full lg:px-20!">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide relative flex flex-col items-end w-full h-full md:pb-12"
+          >
+            <div class="imagen-slide-1w-full h-full">
+              <img
+                src="/images/main-slider-bg/main-bg-01-desk.webp"
+                class="hidden lg:inline-block"
+                alt=""
+              />
+              <img
+                src="/images/main-slider-bg/main-bg-01-movil.webp"
+                alt=""
+                class="lg:hidden"
+              />
+            </div>
+            <div
+              class="slide-main-content flex flex-col items-center gap-2 md:gap-4 bg-secondary-white w-[75%] h-fit px-8 py-12 pb-16 absolute max-w-[600px] xl:max-w-[950px] mx-auto bottom-0 left-0 right-0 mb-20 md:mb-0"
+            >
+              <span
+                class="uppercase font-semibold text-sm md:text-base lg:text-lg"
+                >general</span
+              >
+              <h1
+                class="text-2xl capitalize text-center max-w-[200px] md:max-w-full md:text-4xl xl:text-5xl"
+              >
+                creativo & profesional
+              </h1>
+              <p class="text-center text-xs md:text-sm xl:text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                officiis.
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide relative flex flex-col items-end w-full h-full md:pb-12"
+          >
+            <div class="imagen-slide-1w-full h-full">
+              <img
+                src="/images/main-slider-bg/main-bg-02-desk.webp"
+                class="hidden lg:inline-block"
+                alt=""
+              />
+              <img
+                src="/images/main-slider-bg/bg-main-02-movil.webp"
+                alt=""
+                class="lg:hidden"
+              />
+            </div>
+            <div
+              class="slide-main-content flex flex-col items-center gap-2 md:gap-4 bg-secondary-white w-[75%] h-fit px-8 py-12 pb-16 absolute max-w-[600px] xl:max-w-[950px] mx-auto bottom-0 left-0 right-0 mb-20 md:mb-0"
+            >
+              <span
+                class="uppercase font-semibold text-sm md:text-base lg:text-lg"
+                >general</span
+              >
+              <h1
+                class="text-2xl capitalize text-center max-w-[200px] md:max-w-full md:text-5xl"
+              >
+                construye tu casa virtualmente
+              </h1>
+              <p class="text-center text-xs md:text-sm xl:text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                officiis.
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide relative flex flex-col items-end w-full h-full md:pb-12"
+          >
+            <div class="imagen-slide-1w-full h-full">
+              <img
+                src="/images/main-slider-bg/main-bg-03-desk.webp"
+                class="hidden lg:inline-block"
+                alt=""
+              />
+              <img
+                src="/images/main-slider-bg/main-bg-03-movil.webp"
+                alt=""
+                class="lg:hidden"
+              />
+            </div>
+            <div
+              class="slide-main-content flex flex-col items-center gap-2 md:gap-4 bg-secondary-white w-[75%] h-fit px-8 py-12 pb-16 absolute max-w-[600px] xl:max-w-[950px] mx-auto bottom-0 left-0 right-0 mb-20 md:mb-0"
+            >
+              <span
+                class="uppercase font-semibold text-sm md:text-base lg:text-lg"
+                >general</span
+              >
+              <h1
+                class="text-2xl capitalize text-center max-w-[200px] md:max-w-full md:text-4xl xl:text-5xl"
+              >
+                natural & moderno
+              </h1>
+              <p class="text-center text-xs md:text-sm xl:text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                officiis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div
+          class="swiper-button-prev hidden! lg:flex! w-20! bg-white h-20! left-10!"
+        ></div>
+        <div
+          class="swiper-button-next hidden! lg:flex! w-20! bg-white h-20! right-10!"
+        ></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="/app.js"></script>
   </body>
 </html>

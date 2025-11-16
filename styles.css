@@ -11,9 +11,26 @@ img {
 :root {
   --fuente-principal: "Poppins", sans-serif;
   --fuente-secondaria: "Roboto Condensed", sans-serif;
+  --secondary-white: #efefef;
+}
+
+.bg-secondary-white {
+  background-color: #efefef;
+}
+
+.text-secondary-white {
+  background-color: #efefef;
 }
 
 * {
   scroll-behavior: smooth;
   font-family: var(--fuente-principal);
+}
+
+/*ESTILOS SWIPER*/
+
+.swiper-navigation-icon {
+  color: #0e0e0e;
+  height: 30px !important;
+  width: 30px !important;
 }

@@ -27,6 +27,10 @@ img {
   font-family: var(--fuente-principal);
 }
 
+.texto-secundario {
+  font-family: var(--fuente-secondaria);
+}
+
 /*ESTILOS SWIPER*/
 
 .swiper-navigation-icon {

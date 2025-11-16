@@ -7,3 +7,9 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const swiper2 = new Swiper(".swiper-about", {
+  // Optional parameters
+  loop: true,
+  autoplay: true,
+});

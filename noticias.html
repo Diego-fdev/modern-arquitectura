@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Noticias - Modern Arquitectura</title>
+  </head>
+  <body>
+    <header
+      class="h-16 md:h-20 px-4 md:px-8 lg:px-20 flex items-center justify-between"
+    >
+      <a href="#inicio" class="logo-header w-28 md:w-32">
+        <img src="/images/logo-dark.png" alt="" />
+      </a>
+      <button class="btn-mobile-nav md:hidden">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+      <nav class="nav-desktop hidden md:block">
+        <ul class="flex gap-4 items-center">
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              href="#inicio"
+              >inicio</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              href="#noticias"
+              >noticias</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              href="#trabajos"
+              >trabajos</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              href="#blog"
+              >blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <footer
+      class="pt-20 pb-2 w-full max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 2xl:px-0 grid sm:grid-cols-2 md:grid-cols-3 gap-12 lg:gap-x-0"
+    >
+      <div
+        class="logo-footer w-40 lg:w-48 2xl:w-56 h-fit sm:col-span-2 md:col-span-1"
+      >
+        <img src="/images/logo-dark.png" alt="" />
+      </div>
+      <ul class="flex flex-col gap-1">
+        <li>
+          <span class="capitalize py-2 w-full inline-block"
+            >términos y condiciones</span
+          >
+        </li>
+        <li>
+          <span class="capitalize py-2 w-full inline-block"
+            >política de privacidad</span
+          >
+        </li>
+        <li>
+          <span class="capitalize py-2 w-full inline-block">carreras</span>
+        </li>
+        <li>
+          <span class="capitalize py-2 w-full inline-block">contáctanos</span>
+        </li>
+      </ul>
+      <ul class="flex flex-col gap-1">
+        <li>
+          <a class="capitalize py-2 w-full inline-block" href="#inicio"
+            >inicio</a
+          >
+        </li>
+        <li><a class="capitalize py-2 w-full inline-block">noticias</a></li>
+        <li><a class="capitalize py-2 w-full inline-block">trabajos</a></li>
+        <li><a class="capitalize py-2 w-full inline-block">blog</a></li>
+      </ul>
+      <span
+        class="w-full flex items-center justify-center uppercase text-xs font-semibold sm:col-span-2 md:col-span-3"
+        >&copy; modern arquitectura 2025</span
+      >
+    </footer>
+    <a
+      href="#inicio"
+      class="btn-scroll-top fixed bottom-4 right-4 md:bottom-8 lg:bottom-12 md:right-8 lg:right-12 bg-black z-2 text-white w-10 h-10 rounded-sm flex items-center justify-center opacity-20 hover:opacity-100"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+  </body>
+</html>

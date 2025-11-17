@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Trabajos - Modern Arquitectura</title>
+  </head>
+  <body>
+    <header
+      class="h-16 md:h-20 px-4 md:px-8 lg:px-20 flex items-center justify-between"
+    >
+      <a href="#inicio" class="logo-header w-28 md:w-32">
+        <img src="/images/logo-dark.png" alt="" />
+      </a>
+      <button class="btn-mobile-nav md:hidden">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+      <nav class="nav-desktop hidden md:block">
+        <ul class="flex gap-4 items-center">
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              href="/index.html"
+              >inicio</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              href="/noticias.html"
+              >noticias</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              href="/trabajos.html"
+              >trabajos</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              href="/blog.html"
+              >blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      class="hero h-[440px] md:h-[400px] lg:h-[440px] xl:h-[540px] w-full relative flex items-end xl:items-center"
+    >
+      <div
+        class="imagen-hero h-full absolute top-0 left-0 after:absolute after:bg-black/60 after:inset-0 w-full"
+      >
+        <img
+          src="/images/img-header-sec-movil.webp"
+          alt=""
+          srcset=""
+          class="lg:hidden"
+        />
+        <img
+          src="/images/img-header-sec-desk.webp"
+          alt=""
+          srcset=""
+          class="hidden lg:inline-block"
+        />
+      </div>
+      <div
+        class="hero-content w-full max-w-60 md:max-w-52 lg:max-w-60 lg:ml-20 lg:h-[380px] mx-auto md:ml-8 h-[380px] md:h-[340px] flex flex-col gap-4 relative pb-8 xl:pb-0"
+      >
+        <div
+          class="title-hero border-10 border-white h-[90%] border-r-0 flex items-center md:justify-start justify-center p-8 relative after:w-2.5 after:h-14 after:top-0 after:right-0 after:bg-white after:absolute before:w-2.5 before:h-14 before:bottom-0 before:right-0 before:bg-white before:absolute"
+        >
+          <h1
+            class="uppercase text-xl tracking-widest text-white md:text-nowrap relative left-0 lg:text-2xl xl:text-3xl"
+          >
+            planificacion, diseño y conservacion historica
+          </h1>
+        </div>
+        <ul class="hero-nav flex gap-2 text-white">
+          <li class="capitalize text-xs lg:text-sm">
+            <a href="/index.html">inicio</a>
+          </li>
+          <li class="capitalize text-xs lg:text-sm">
+            <i class="fa-solid fa-angles-right"></i>
+          </li>
+          <li class="capitalize text-xs lg:text-sm">
+            <a href="/noticias.html">noticias</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section
+      class="w-full max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 2xl:px-0 pt-20 pb-10"
+    >
+      <header
+        class="pb-6 relative after:absolute after:h-2 after:w-24 after:bg-black afterleft-0 after:bottom-0"
+      >
+        <h2 class="uppercase text-2xl md:text-3xl lg:text-4xl font-semibold">
+          trabajos
+        </h2>
+      </header>
+    </section>
+    <footer
+      class="pt-20 pb-2 w-full max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 2xl:px-0 grid sm:grid-cols-2 md:grid-cols-3 gap-12 lg:gap-x-0"
+    >
+      <div
+        class="logo-footer w-40 lg:w-48 2xl:w-56 h-fit sm:col-span-2 md:col-span-1"
+      >
+        <img src="/images/logo-dark.png" alt="" />
+      </div>
+      <ul class="flex flex-col gap-1">
+        <li>
+          <span class="capitalize py-2 w-full inline-block"
+            >términos y condiciones</span
+          >
+        </li>
+        <li>
+          <span class="capitalize py-2 w-full inline-block"
+            >política de privacidad</span
+          >
+        </li>
+        <li>
+          <span class="capitalize py-2 w-full inline-block">carreras</span>
+        </li>
+        <li>
+          <span class="capitalize py-2 w-full inline-block">contáctanos</span>
+        </li>
+      </ul>
+      <ul class="flex flex-col gap-1">
+        <li>
+          <a href="/index.html" class="capitalize py-2 w-full inline-block"
+            >inicio</a
+          >
+        </li>
+        <li>
+          <a href="/noticias.html" class="capitalize py-2 w-full inline-block"
+            >noticias</a
+          >
+        </li>
+        <li>
+          <a href="/trabajos.html" class="capitalize py-2 w-full inline-block"
+            >trabajos</a
+          >
+        </li>
+        <li>
+          <a href="/blog.html" class="capitalize py-2 w-full inline-block"
+            >blog</a
+          >
+        </li>
+      </ul>
+      <span
+        class="w-full flex items-center justify-center uppercase text-xs font-semibold sm:col-span-2 md:col-span-3"
+        >&copy; modern arquitectura 2025</span
+      >
+    </footer>
+    <a
+      href="#inicio"
+      class="btn-scroll-top fixed bottom-4 right-4 md:bottom-8 lg:bottom-12 md:right-8 lg:right-12 bg-black z-2 text-white w-10 h-10 rounded-sm flex items-center justify-center opacity-20 hover:opacity-100"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+  </body>
+</html>

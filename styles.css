@@ -38,3 +38,9 @@ img {
   height: 30px !important;
   width: 30px !important;
 }
+
+/*ESTILOS SECTION TESTIMONIOS*/
+
+.section-testimonios {
+  background-image: url("/images/ptn-1.png");
+}

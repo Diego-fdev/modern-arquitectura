@@ -54,6 +54,19 @@ const swiper4 = new Swiper(".swiper-testimonios", {
   },
 });
 
+const swiper5 = new Swiper(".swiper-clientes", {
+  loop: true,
+  slidesPerView: 2,
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+  },
+});
+
 /*FILTRO PROYECTOS*/
 
 const slidesProyectos = document.querySelectorAll(".slide-trabajo");

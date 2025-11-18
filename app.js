@@ -120,3 +120,41 @@ filtrosProyectos.forEach((filtro) => {
     filterProyects(filtro);
   });
 });
+
+/*MENU MOBILE */
+
+const menuMobile = document.querySelector(".modal-mobile");
+const linksMenuMobile = document.querySelectorAll(".link-nav-mobile");
+const btnCloseMenuMobile = document.querySelector(".btn-close-mobile-nav");
+const btnOpenMenuMobile = document.querySelector(".btn-mobile-nav");
+
+const toggleMenuMobile = (accion) => {
+  if (accion === "abrir") {
+    menuMobile.classList.add("visible", "pointer-events-auto", "opacity-100");
+    menuMobile.classList.remove(
+      "invisible",
+      "pointer-events-none",
+      "opacity-0"
+    );
+  } else {
+    menuMobile.classList.remove(
+      "visible",
+      "pointer-events-auto",
+      "opacity-100"
+    );
+    menuMobile.classList.add("invisible", "pointer-events-none", "opacity-0");
+  }
+};
+
+btnOpenMenuMobile.addEventListener("click", () => {
+  toggleMenuMobile("abrir");
+});
+btnCloseMenuMobile.addEventListener("click", () => {
+  toggleMenuMobile("cerrar");
+});
+
+linksMenuMobile.forEach((link) => {
+  link.addEventListener("click", () => {
+    toggleMenuMobile("cerrar");
+  });
+});

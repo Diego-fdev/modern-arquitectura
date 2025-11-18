@@ -75,6 +75,20 @@ const swiper6 = new Swiper(".swiper-post-blog", {
     },
   },
 });
+const swiper7 = new Swiper(".swiper-post-relacionados", {
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});
 
 /*FILTRO PROYECTOS*/
 

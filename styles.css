@@ -44,3 +44,17 @@ img {
 .section-testimonios {
   background-image: url("/images/ptn-1.png");
 }
+
+.swiper-pagination {
+  bottom: 0px !important;
+}
+.swiper-pagination-bullet {
+  border-radius: 0px !important;
+  background-color: #bdbdbd;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: black !important;
+  transition: background-color 0.2s ease-in-out;
+}

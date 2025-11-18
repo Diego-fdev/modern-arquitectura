@@ -39,6 +39,9 @@ const swiper3 = new Swiper(".swiper-trabajos", {
 const swiper4 = new Swiper(".swiper-testimonios", {
   loop: true,
   spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+  },
   breakpoints: {
     768: {
       slidesPerView: 2,

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       rel="stylesheet"
@@ -86,7 +90,7 @@
           <h1
             class="uppercase text-xl tracking-widest text-white md:text-nowrap relative left-0 lg:text-2xl xl:text-3xl"
           >
-            construcciones de alta calidad, efectivas e inspiradoras.
+            construcciones de calidad, efectivas e inspiradoras.
           </h1>
         </div>
         <ul class="hero-nav flex gap-2 text-white">
@@ -100,6 +104,156 @@
             <a href="/blog.html">blog</a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section
+      class="pt-20 pb-10 px-4 md:px-8 lg:px-10 w-full max-w-[1440px] mx-auto 2xl:px-0 flex flex-col gap-12"
+    >
+      <header
+        class="pb-6 relative after:absolute after:h-2 after:w-24 after:bg-black afterleft-0 after:bottom-0"
+      >
+        <h2 class="uppercase text-2xl md:text-3xl lg:text-4xl font-semibold">
+          blog
+        </h2>
+      </header>
+      <div
+        class="main-post-blog flex flex-col gap-4 md:max-w-[700px] md:mx-auto lg:max-w-full"
+      >
+        <div
+          class="swiper-post-blog overflow-hidden md:h-[400px] lg:h-[300px] xl:h-[400px]"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="/images/pag-sec-blog/swiper-principal/img-pag-sec-blog-01.webp"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/images/pag-sec-blog/swiper-principal/img-pag-sec-blog-02.webp"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/images/pag-sec-blog/swiper-principal/img-pag-sec-blog-03.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="content-blog-post grid gap-8 md:grid-cols-2">
+          <header class="flex flex-col gap-2 md:col-span-2">
+            <h3 class="uppercase font-semibold text-xl md:text-3xl xl:text-4xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h3>
+            <ul class="flex gap-1 items-center">
+              <li>
+                <span class="uppercase text-xs xl:text-sm font-semibold"
+                  >20 feb 2025</span
+                >
+              </li>
+              <li><span class="text-xs xl:text-sm opacity-50">/</span></li>
+              <li>
+                <span
+                  class="text-xs xl:text-sm opacity-50 uppercase font-semibold"
+                  >by admin</span
+                >
+              </li>
+              <li><span class="text-xs xl:text-sm opacity-50">/</span></li>
+
+              <li>
+                <span
+                  class="text-xs xl:text-sm opacity-50 uppercase font-semibold"
+                  >5 comentarios</span
+                >
+              </li>
+            </ul>
+          </header>
+          <p
+            class="text-xs md:text-sm xl:text-base leading-7 md:leading-8 xl:leading-10"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            ratione eaque blanditiis nihil expedita, totam eligendi tenetur ut
+            laborum dolore laboriosam quia placeat doloremque ducimus error
+            officia, ex libero excepturi, quis eos. Eum voluptates aperiam
+            voluptate sapiente esse qui ea!
+          </p>
+          <p
+            class="text-xs md:text-sm xl:text-base leading-7 md:leading-8 xl:leading-10"
+          >
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, ex
+            provident iusto error, iste quasi aut optio obcaecati perspiciatis
+            reprehenderit cumque. Autem tempore commodi ab reprehenderit at
+            recusandae, nemo ad vitae error dolore molestiae ducimus corrupti in
+            quia! Repellat dolore dolorum ab perferendis impedit nam!
+          </p>
+          <div class="tags flex flex-col gap-4">
+            <span class="uppercase text-lg font-semibold tracking-widest"
+              >tags</span
+            >
+            <ul class="flex gap-2 flex-wrap">
+              <li class="border border-black/20 py-1 px-2">
+                <span class="uppercase font-semibold text-xs">negocio</span>
+              </li>
+              <li class="border border-black/20 rounded-xs py-1 px-2">
+                <span class="uppercase font-semibold text-xs"
+                  >construccion</span
+                >
+              </li>
+              <li class="border border-black/20 rounded-xs py-1 px-2">
+                <span class="uppercase font-semibold text-xs">diseño</span>
+              </li>
+              <li class="border border-black/20 rounded-xs py-1 px-2">
+                <span class="uppercase font-semibold text-xs"
+                  >arquitectura</span
+                >
+              </li>
+              <li class="border border-black/20 rounded-xs py-1 px-2">
+                <span class="uppercase font-semibold text-xs">tecnologia</span>
+              </li>
+              <li class="border border-black/20 rounded-xs py-1 px-2">
+                <span class="uppercase font-semibold text-xs">marketing</span>
+              </li>
+              <li class="border border-black/20 rounded-xs py-1 px-2">
+                <span class="uppercase font-semibold text-xs">estructura</span>
+              </li>
+            </ul>
+          </div>
+          <div class="share flex flex-col gap-4">
+            <span class="uppercase text-lg font-semibold tracking-widest"
+              >compartir</span
+            >
+            <ul class="flex flex-wrap gap-2">
+              <li
+                class="border border-black/20 rounded-xs w-8 h-8 flex items-center justify-center md:w-10 md:h-10"
+              >
+                <i class="fa-brands fa-facebook-f text-xs md:text-sm"></i>
+              </li>
+              <li
+                class="border border-black/20 rounded-xs w-8 h-8 flex items-center justify-center md:w-10 md:h-10"
+              >
+                <i class="fa-brands fa-youtube text-xs md:text-sm"></i>
+              </li>
+              <li
+                class="border border-black/20 rounded-xs w-8 h-8 flex items-center justify-center md:w-10 md:h-10"
+              >
+                <i class="fa-brands fa-x-twitter text-xs md:text-sm"></i>
+              </li>
+              <li
+                class="border border-black/20 rounded-xs w-8 h-8 flex items-center justify-center md:w-10 md:h-10"
+              >
+                <i class="fa-brands fa-instagram text-xs md:text-sm"></i>
+              </li>
+              <li
+                class="border border-black/20 rounded-xs w-8 h-8 flex items-center justify-center md:w-10 md:h-10"
+              >
+                <i class="fa-solid fa-share text-xs md:text-sm"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <footer
@@ -162,5 +316,7 @@
     >
       <i class="fa-solid fa-chevron-up"></i>
     </a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/app.js"></script>
   </body>
 </html>

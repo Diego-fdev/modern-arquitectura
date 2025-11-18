@@ -66,6 +66,15 @@ const swiper5 = new Swiper(".swiper-clientes", {
     },
   },
 });
+const swiper6 = new Swiper(".swiper-post-blog", {
+  loop: true,
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+});
 
 /*FILTRO PROYECTOS*/
 

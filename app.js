@@ -2,6 +2,7 @@ const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
   effect: "fade",
+  autoplay: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -11,7 +12,10 @@ const swiper = new Swiper(".swiper", {
 const swiper2 = new Swiper(".swiper-about", {
   // Optional parameters
   loop: true,
-  autoplay: true,
+  autoplay: {
+    enabled: true,
+    delay: 3000,
+  },
 });
 
 const swiper3 = new Swiper(".swiper-trabajos", {

@@ -1,1 +1,60 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --fuente-principal: "Poppins", sans-serif;
+  --fuente-secondaria: "Roboto Condensed", sans-serif;
+  --secondary-white: #efefef;
+}
+
+.bg-secondary-white {
+  background-color: #efefef;
+}
+
+.text-secondary-white {
+  background-color: #efefef;
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: var(--fuente-principal);
+}
+
+.texto-secundario {
+  font-family: var(--fuente-secondaria);
+}
+
+/*ESTILOS SWIPER*/
+
+.swiper-navigation-icon {
+  color: #0e0e0e;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+/*ESTILOS SECTION TESTIMONIOS*/
+
+.section-testimonios {
+  background-image: url("/images/ptn-1.png");
+}
+
+.swiper-pagination {
+  bottom: 0px !important;
+}
+.swiper-pagination-bullet {
+  border-radius: 0px !important;
+  background-color: #bdbdbd;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: black !important;
+  transition: background-color 0.2s ease-in-out;
+}

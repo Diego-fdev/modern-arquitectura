@@ -3,11 +3,1169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/styles.css" />
     <title>Modern Arquitectura</title>
   </head>
-  <body>
+  <body id="inicio">
+    <header
+      class="h-16 md:h-20 px-4 md:px-8 lg:px-20 flex items-center justify-between fixed top-0 left-0 z-10 bg-white w-full"
+    >
+      <a href="#inicio" class="logo-header w-28 md:w-32">
+        <img src="/images/logo-dark.png" alt="logo de modern arquitectura" />
+      </a>
+      <button class="btn-mobile-nav md:hidden">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+      <nav class="nav-desktop hidden md:block">
+        <ul class="flex gap-4 items-center">
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base hover:bg-black hover:text-white rounded-xs transition-colors"
+              href="/index.html"
+              >inicio</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base hover:bg-black hover:text-white rounded-xs transition-colors"
+              href="/noticias.html"
+              >noticias</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base hover:bg-black hover:text-white rounded-xs transition-colors"
+              href="/trabajos.html"
+              >trabajos</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base hover:bg-black hover:text-white rounded-xs transition-colors"
+              href="/blog.html"
+              >blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div
+      class="modal-mobile fixed top-0 left-0 w-full h-full bg-white z-10 md:hidden flex-col flex pointer-events-none invisible opacity-0"
+    >
+      <header
+        class="h-16 md:h-20 px-4 md:px-8 flex items-center justify-between"
+      >
+        <a href="#inicio" class="logo-header w-28 md:w-32">
+          <img src="/images/logo-dark.png" alt="logo de modern arquitectura" />
+        </a>
+        <button class="btn-close-mobile-nav">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+      </header>
+      <nav class="navegacion-mobile">
+        <ul class="flex flex-col gap-4 pt-20 px-4">
+          <li class="link-nav-mobile">
+            <a
+              class="w-full py-2 capitalize font-medium text-2xl flex justify-between items-center"
+              href="/index.html"
+            >
+              <span>inicio</span>
+              <i class="fa-solid fa-chevron-right text-sm"></i>
+            </a>
+          </li>
+          <li class="link-nav-mobile">
+            <a
+              class="w-full py-2 capitalize font-medium text-2xl flex justify-between items-center"
+              href="/noticias.html"
+            >
+              <span>noticias</span>
+              <i class="fa-solid fa-chevron-right text-sm"></i>
+            </a>
+          </li>
+          <li class="link-nav-mobile">
+            <a
+              class="w-full py-2 capitalize font-medium text-2xl flex justify-between items-center"
+              href="/trabajos.html"
+            >
+              <span>trabajos</span>
+              <i class="fa-solid fa-chevron-right text-sm"></i>
+            </a>
+          </li>
+          <li class="link-nav-mobile">
+            <a
+              class="w-full py-2 capitalize font-medium text-2xl flex justify-between items-center"
+              href="/blog.html"
+            >
+              <span>blog</span>
+              <i class="fa-solid fa-chevron-right text-sm"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <span
+        class="copy mt-auto self-center text-xs uppercase font-semibold pb-1"
+      >
+        &copy; modern arquitectura 2025
+      </span>
+    </div>
+    <section class="hero w-full h-[700px] lg:h-[740px] lg:pb-10 mt-16 md:mt-20">
+      <div class="swiper w-full h-full lg:px-20!">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide relative flex flex-col items-end w-full h-full md:pb-12"
+          >
+            <div class="imagen-slide-1w-full h-full">
+              <img
+                src="/images/main-slider-bg/main-bg-01-desk.webp"
+                class="hidden lg:inline-block"
+                alt="imagen de arquitectura desarrollada por modern arquitectura"
+              />
+              <img
+                src="/images/main-slider-bg/main-bg-01-movil.webp"
+                alt="imagen de arquitectura desarrollada por modern arquitectura"
+                class="lg:hidden"
+              />
+            </div>
+            <div
+              class="slide-main-content flex flex-col items-center gap-2 md:gap-4 bg-secondary-white w-[75%] h-fit px-8 py-12 pb-16 absolute max-w-[600px] xl:max-w-[950px] mx-auto bottom-0 left-0 right-0 mb-20 md:mb-0"
+            >
+              <span
+                class="uppercase font-semibold text-sm md:text-base lg:text-lg"
+                >general</span
+              >
+              <h1
+                class="text-2xl capitalize text-center max-w-[200px] md:max-w-full md:text-4xl xl:text-5xl"
+              >
+                creativo & profesional
+              </h1>
+              <p class="text-center text-xs md:text-sm xl:text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                officiis.
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide relative flex flex-col items-end w-full h-full md:pb-12"
+          >
+            <div class="imagen-slide-1w-full h-full">
+              <img
+                src="/images/main-slider-bg/main-bg-02-desk.webp"
+                class="hidden lg:inline-block"
+                alt="imagen de arquitectura desarrollada por modern arquitectura"
+              />
+              <img
+                src="/images/main-slider-bg/bg-main-02-movil.webp"
+                alt="imagen de arquitectura desarrollada por modern arquitectura"
+                class="lg:hidden"
+              />
+            </div>
+            <div
+              class="slide-main-content flex flex-col items-center gap-2 md:gap-4 bg-secondary-white w-[75%] h-fit px-8 py-12 pb-16 absolute max-w-[600px] xl:max-w-[950px] mx-auto bottom-0 left-0 right-0 mb-20 md:mb-0"
+            >
+              <span
+                class="uppercase font-semibold text-sm md:text-base lg:text-lg"
+                >general</span
+              >
+              <h1
+                class="text-2xl capitalize text-center max-w-[200px] md:max-w-full md:text-5xl"
+              >
+                construye tu casa virtualmente
+              </h1>
+              <p class="text-center text-xs md:text-sm xl:text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                officiis.
+              </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide relative flex flex-col items-end w-full h-full md:pb-12"
+          >
+            <div class="imagen-slide-1w-full h-full">
+              <img
+                src="/images/main-slider-bg/main-bg-03-desk.webp"
+                class="hidden lg:inline-block"
+                alt="imagen de arquitectura desarrollada por modern arquitectura"
+              />
+              <img
+                src="/images/main-slider-bg/main-bg-03-movil.webp"
+                alt="imagen de arquitectura desarrollada por modern arquitectura"
+                class="lg:hidden"
+              />
+            </div>
+            <div
+              class="slide-main-content flex flex-col items-center gap-2 md:gap-4 bg-secondary-white w-[75%] h-fit px-8 py-12 pb-16 absolute max-w-[600px] xl:max-w-[950px] mx-auto bottom-0 left-0 right-0 mb-20 md:mb-0"
+            >
+              <span
+                class="uppercase font-semibold text-sm md:text-base lg:text-lg"
+                >general</span
+              >
+              <h1
+                class="text-2xl capitalize text-center max-w-[200px] md:max-w-full md:text-4xl xl:text-5xl"
+              >
+                natural & moderno
+              </h1>
+              <p class="text-center text-xs md:text-sm xl:text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                officiis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div
+          class="swiper-button-prev hidden! lg:flex! w-20! bg-white h-20! left-10!"
+        ></div>
+        <div
+          class="swiper-button-next hidden! lg:flex! w-20! bg-white h-20! right-10!"
+        ></div>
+      </div>
+    </section>
+    <section
+      class="about flex flex-col lg:grid lg:grid-cols-[40%_60%] xl:grid-cols-[45%_55%] gap-12 lg:gap-0 py-20 px-4 md:px-8 lg:px-12 max-w-[1440px] mx-auto 2xl:px-0"
+    >
+      <div
+        class="main-content-about flex flex-col gap-8 max-w-[400px] md:max-w-[600px]"
+      >
+        <span
+          class="uppercase text-2xl font-light lg:text-xl xl:text-2xl 2xl:text-3xl"
+          >bienvenido</span
+        >
+        <h2
+          class="uppercase text-3xl md:text-4xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold"
+        >
+          somos una compañia de construccion - diseño creativo
+        </h2>
+        <p
+          class="text-xs md:text-sm uppercase leading-6 lg:text-xs xl:text-sm 2xl:text-base"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rem
+          aperiam tempora obcaecati nisi. Id.
+        </p>
+        <p class="text-xs leading-6 2xl:text-sm">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
+          ut reprehenderit nulla inventore ullam fugiat aliquid labore delectus,
+          nobis reiciendis.
+        </p>
+        <button
+          class="w-fit bg-black px-6 py-4 text-white flex items-center gap-8 cursor-pointer group"
+        >
+          <span class="uppercase text-xs lg:text-sm tracking-wide"
+            >leer mas</span
+          >
+          <span
+            class="w-8 h-px bg-white relative group-hover:translate-x-2 transition-transform"
+          ></span>
+        </button>
+      </div>
+      <div
+        class="contenedor-swiper-about w-full h-[220px] sm:h-[300px] md:h-[350px] md:w-[550px] lg:w-[450px] lg:h-[280px] xl:w-[550px] xl:h-[350px] 2xl:w-[650px] 2xl:h-[400px] ml-auto max-w-[650px] relative after:absolute after:border-30 after:border-black/20 after:-left-14 after:top-14 lg:after:-left-20 lg:after:top-20 after:w-full after:h-full after:hidden md:after:block"
+      >
+        <div class="swiper-about w-full h-full overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="lg:hidden"
+                src="/images/swiper-nosotros/img-nosotros-01-movil.webp"
+                alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+              />
+              <img
+                class="hidden lg:inline-block"
+                src="/images/swiper-nosotros/img-nosotros-01-desk.webp"
+                alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="lg:hidden"
+                src="/images/swiper-nosotros/img-nosotros-02-movil.webp"
+                alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+              />
+              <img
+                class="hidden lg:inline-block"
+                src="/images/swiper-nosotros/img-nosotros-02-desk.webp"
+                alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="lg:hidden"
+                src="/images/swiper-nosotros/img-nosotros-03-movil.webp"
+                alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+              />
+              <img
+                class="hidden lg:inline-block"
+                src="/images/swiper-nosotros/img-nosotros-03-desk.webp"
+                alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="lg:hidden"
+                src="/images/swiper-nosotros/img-nosotros-04-movil.webp"
+                alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+              />
+              <img
+                class="hidden lg:inline-block"
+                src="/images/swiper-nosotros/img-nosotros-04-desk.webp"
+                alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="flex flex-col items-end justify-end pr-2 col-span-2 md:mt-10 2xl:mt-24 w-full border-r-10 border-black"
+      >
+        <span
+          class="uppercase font-bold text-5xl lg:text-6xl xl:text-7xl opacity-20"
+          >18 años</span
+        >
+        <span class="texto-secundario uppercase text-lg font-medium xl:text-xl"
+          >experiencia trabajando</span
+        >
+      </footer>
+    </section>
+    <section
+      class="trabajos overflow-hidden px-4 md:px-8 lg:px-12 py-20 flex flex-col gap-12"
+    >
+      <header
+        class="pb-6 relative after:absolute after:h-2 after:w-24 after:bg-black afterleft-0 after:bottom-0"
+      >
+        <h2 class="uppercase text-2xl md:text-3xl lg:text-4xl font-semibold">
+          ultimos proyectos
+        </h2>
+      </header>
+      <ul class="filtros flex gap-2 flex-wrap sm:justify-end">
+        <li
+          class="filtro-proyecto cursor-pointer px-2 py-1 text-blue-800 transition-colors"
+          data-tipo="todos"
+        >
+          <span class="text-lg uppercase font-semibold">todos</span>
+        </li>
+        <li
+          class="filtro-proyecto cursor-pointer px-2 py-1"
+          data-tipo="construccion"
+        >
+          <span class="text-lg uppercase font-semibold">construccion</span>
+        </li>
+        <li
+          class="filtro-proyecto cursor-pointer px-2 py-1"
+          data-tipo="interior"
+        >
+          <span class="text-lg uppercase font-semibold">interior</span>
+        </li>
+        <li
+          class="filtro-proyecto cursor-pointer px-2 py-1"
+          data-tipo="exterior"
+        >
+          <span class="text-lg uppercase font-semibold">exterior</span>
+        </li>
+      </ul>
+      <div
+        class="swiper-trabajos w-full overflow-hidden max-w-[400px] mx-auto sm:mx-0 sm:max-w-full"
+      >
+        <div
+          class="swiper-wrapper sm:h-[70vw]! lg:h-[45vw]! xl:h-[35vw]! 2xl:h-[500px]! max-h-[550px] items-stretch!"
+        >
+          <div
+            class="swiper-slide relative group cursor-pointer slide-trabajo"
+            data-tipo="interior"
+          >
+            <div
+              class="info-slide absolute inset-0 bg-black text-white p-8 flex flex-col gap-4 after:absolute after:h-full after:top-0 after:left-4 after:bg-white after:w-px before:absolute before:h-px before:top-4 before:left-0 before:bg-white before:w-full invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity"
+            >
+              <span class="uppercase font-medium text-xl"
+                >casa triangular en el lago</span
+              >
+              <span class="text-xs leading-6"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                reiciendis tenetur, commodi quod consectetur ab!</span
+              >
+              <button
+                class="border-t-2 pt-4 border-white self-end mt-auto [writing-mode:vertical-lr] rotate-180"
+              >
+                <span class="uppercase text-sm tracking-widest">leer mas</span>
+              </button>
+            </div>
+            <img
+              src="/images/swiper-proyectos/img-proyectos-01.webp"
+              alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+            />
+          </div>
+          <div
+            class="swiper-slide relative group cursor-pointer slide-trabajo"
+            data-tipo="exterior"
+          >
+            <div
+              class="info-slide absolute inset-0 bg-black text-white p-8 flex flex-col gap-4 after:absolute after:h-full after:top-0 after:left-4 after:bg-white after:w-px before:absolute before:h-px before:top-4 before:left-0 before:bg-white before:w-full invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity"
+            >
+              <span class="uppercase font-medium text-xl"
+                >casa triangular en el lago</span
+              >
+              <span class="text-xs leading-6"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                reiciendis tenetur, commodi quod consectetur ab!</span
+              >
+              <button
+                class="border-t-2 pt-4 border-white self-end mt-auto [writing-mode:vertical-lr] rotate-180"
+              >
+                <span class="uppercase text-sm tracking-widest">leer mas</span>
+              </button>
+            </div>
+            <div class="contenedor-imagen w-full h-full! block">
+              <img
+                src="/images/swiper-proyectos/img-proyectos-02.webp"
+                alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-slide relative group cursor-pointer slide-trabajo"
+            data-tipo="interior"
+          >
+            <div
+              class="info-slide absolute inset-0 bg-black text-white p-8 flex flex-col gap-4 after:absolute after:h-full after:top-0 after:left-4 after:bg-white after:w-px before:absolute before:h-px before:top-4 before:left-0 before:bg-white before:w-full invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity"
+            >
+              <span class="uppercase font-medium text-xl"
+                >casa triangular en el lago</span
+              >
+              <span class="text-xs leading-6"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                reiciendis tenetur, commodi quod consectetur ab!</span
+              >
+              <button
+                class="border-t-2 pt-4 border-white self-end mt-auto [writing-mode:vertical-lr] rotate-180"
+              >
+                <span class="uppercase text-sm tracking-widest">leer mas</span>
+              </button>
+            </div>
+            <img
+              src="/images/swiper-proyectos/img-proyectos-03.webp"
+              alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+            />
+          </div>
+          <div
+            class="swiper-slide relative group cursor-pointer slide-trabajo"
+            data-tipo="exterior"
+          >
+            <div
+              class="info-slide absolute inset-0 bg-black text-white p-8 flex flex-col gap-4 after:absolute after:h-full after:top-0 after:left-4 after:bg-white after:w-px before:absolute before:h-px before:top-4 before:left-0 before:bg-white before:w-full invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity"
+            >
+              <span class="uppercase font-medium text-xl"
+                >casa triangular en el lago</span
+              >
+              <span class="text-xs leading-6"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                reiciendis tenetur, commodi quod consectetur ab!</span
+              >
+              <button
+                class="border-t-2 pt-4 border-white self-end mt-auto [writing-mode:vertical-lr] rotate-180"
+              >
+                <span class="uppercase text-sm tracking-widest">leer mas</span>
+              </button>
+            </div>
+            <img
+              src="/images/swiper-proyectos/img-proyectos-04.webp"
+              alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+            />
+          </div>
+          <div
+            class="swiper-slide relative group cursor-pointer slide-trabajo"
+            data-tipo="interior"
+          >
+            <div
+              class="info-slide absolute inset-0 bg-black text-white p-8 flex flex-col gap-4 after:absolute after:h-full after:top-0 after:left-4 after:bg-white after:w-px before:absolute before:h-px before:top-4 before:left-0 before:bg-white before:w-full invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity"
+            >
+              <span class="uppercase font-medium text-xl"
+                >casa triangular en el lago</span
+              >
+              <span class="text-xs leading-6"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                reiciendis tenetur, commodi quod consectetur ab!</span
+              >
+              <button
+                class="border-t-2 pt-4 border-white self-end mt-auto [writing-mode:vertical-lr] rotate-180"
+              >
+                <span class="uppercase text-sm tracking-widest">leer mas</span>
+              </button>
+            </div>
+            <img
+              src="/images/swiper-proyectos/img-proyectos-05.webp"
+              alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+            />
+          </div>
+          <div
+            class="swiper-slide relative group cursor-pointer slide-trabajo"
+            data-tipo="construccion"
+          >
+            <div
+              class="info-slide absolute inset-0 bg-black text-white p-8 flex flex-col gap-4 after:absolute after:h-full after:top-0 after:left-4 after:bg-white after:w-px before:absolute before:h-px before:top-4 before:left-0 before:bg-white before:w-full invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity"
+            >
+              <span class="uppercase font-medium text-xl"
+                >casa triangular en el lago</span
+              >
+              <span class="text-xs leading-6"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                reiciendis tenetur, commodi quod consectetur ab!</span
+              >
+              <button
+                class="border-t-2 pt-4 border-white self-end mt-auto [writing-mode:vertical-lr] rotate-180"
+              >
+                <span class="uppercase text-sm tracking-widest">leer mas</span>
+              </button>
+            </div>
+            <img
+              src="/images/swiper-proyectos/img-proyectos-06.webp"
+              alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+            />
+          </div>
+          <div
+            class="swiper-slide relative group cursor-pointer slide-trabajo"
+            data-tipo="construccion"
+          >
+            <div
+              class="info-slide absolute inset-0 bg-black text-white p-8 flex flex-col gap-4 after:absolute after:h-full after:top-0 after:left-4 after:bg-white after:w-px before:absolute before:h-px before:top-4 before:left-0 before:bg-white before:w-full invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity"
+            >
+              <span class="uppercase font-medium text-xl"
+                >casa triangular en el lago</span
+              >
+              <span class="text-xs leading-6"
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+                reiciendis tenetur, commodi quod consectetur ab!</span
+              >
+              <button
+                class="border-t-2 pt-4 border-white self-end mt-auto [writing-mode:vertical-lr] rotate-180"
+              >
+                <span class="uppercase text-sm tracking-widest">leer mas</span>
+              </button>
+            </div>
+            <img
+              src="/images/swiper-proyectos/img-proyectos-07.webp"
+              alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+            />
+          </div>
+        </div>
+      </div>
+      <footer
+        class="flex flex-col items-end justify-end pr-2 col-span-2 w-full border-r-10 border-black"
+      >
+        <span
+          class="uppercase font-bold text-5xl lg:text-6xl xl:text-7xl opacity-20"
+          >increibles</span
+        >
+        <span class="texto-secundario uppercase text-lg font-medium xl:text-xl"
+          >diseños</span
+        >
+      </footer>
+    </section>
+    <section class="grid lg:grid-cols-2 w-full pb-20">
+      <div class="contenedor-main-equipo bg-black">
+        <div
+          class="main-equipo lg:max-w-[720px] lg:ml-auto px-4 md:px-8 lg:pl-12 lg:pr-4 2xl:pl-0 text-white pt-20 pb-6 lg:pb-8 flex flex-col gap-8"
+        >
+          <header
+            class="pb-6 relative after:absolute after:h-2 after:w-24 after:bg-white after:left-0 after:bottom-0"
+          >
+            <h2
+              class="uppercase text-2xl md:text-3xl lg:text-4xl font-semibold"
+            >
+              nuestros expertos
+            </h2>
+          </header>
+          <div
+            class="imagen-experto-principal max-w-[400px] lg:max-w-[500px] xl:max-w-full mx-auto lg:mx-0 relative lg:ml-auto xl:w-[550px] 2xl:w-[650px]"
+          >
+            <img
+              src="/images/equipo/img-equipo-01-movil.webp"
+              alt="imagen del miembro del equipo taylor roberts"
+              class="lg:hidden"
+            />
+            <img
+              src="/images/equipo/img-equipo-01-desk.webp"
+              class="hidden lg:inline-block"
+              alt="imagen del miembro del equipo taylor roberts"
+            />
+          </div>
+          <div
+            class="info-experto flex flex-col gap-2 items-center lg:w-[400px] lg:ml-auto xl:w-[550px] 2xl:w-[650px]"
+          >
+            <span class="uppercase text-2xl font-semibold">robert wilson</span>
+            <span class="capitalize text-xl">co-manager associated</span>
+            <ul class="flex gap-2 mt-4">
+              <li
+                class="border flex items-center justify-center border-white w-10 h-10"
+              >
+                <i class="fa-brands fa-facebook-f text-sm"></i>
+              </li>
+              <li
+                class="border flex items-center justify-center border-white w-10 h-10"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li
+                class="border flex items-center justify-center border-white w-10 h-10"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </li>
+              <li
+                class="border flex items-center justify-center border-white w-10 h-10"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </li>
+              <li
+                class="border flex items-center justify-center border-white w-10 h-10"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sub-equipo w-full lg:max-w-[720px] lg:mr-auto pt-6 pb-8 px-4 md:px-8 lg:pr-12 lg:pl-4 lg:pt-44 grid gap-8 sm:grid-cols-2 lg:justify-items-start! 2xl:pr-0"
+      >
+        <div
+          class="miembro-sub-equipo lg:mr-auto w-full max-w-[300px] lg:max-w-full mx-auto relative after:absolute after:w-12 after:h-12 after:-bottom-1 after:-left-1 after:bg-black after:z-[-1] bg-white"
+        >
+          <div class="imagen-miembro">
+            <img
+              src="/images/equipo/img-equipo-02.webp"
+              alt="imagen del miembro del equipo taylor roberts"
+            />
+          </div>
+          <div class="info-miembro flex flex-col gap-1 items-center py-4">
+            <span class="uppercase font-semibold">taylor roberts</span>
+            <span class="capitalize text-sm">co-manager associated</span>
+          </div>
+        </div>
+        <div
+          class="miembro-sub-equipo w-full max-w-[300px] lg:max-w-full mx-auto relative after:absolute after:w-12 after:h-12 after:-bottom-1 after:-left-1 after:bg-black after:z-[-1] bg-white"
+        >
+          <div class="imagen-miembro">
+            <img
+              src="/images/equipo/img-equipo-03.webp"
+              alt="imagen del miembro del equipo taylor roberts"
+            />
+          </div>
+          <div class="info-miembro flex flex-col gap-1 items-center py-4">
+            <span class="uppercase font-semibold">taylor roberts</span>
+            <span class="capitalize text-sm">co-manager associated</span>
+          </div>
+        </div>
+        <div
+          class="miembro-sub-equipo w-full max-w-[300px] lg:max-w-full mx-auto relative after:absolute after:w-12 after:h-12 after:-bottom-1 after:-left-1 after:bg-black after:z-[-1] bg-white"
+        >
+          <div class="imagen-miembro">
+            <img
+              src="/images/equipo/img-equipo-04.webp"
+              alt="imagen del miembro del equipo taylor roberts"
+            />
+          </div>
+          <div class="info-miembro flex flex-col gap-1 items-center py-4">
+            <span class="uppercase font-semibold">taylor roberts</span>
+            <span class="capitalize text-sm">co-manager associated</span>
+          </div>
+        </div>
+        <div
+          class="miembro-sub-equipo w-full max-w-[300px] lg:max-w-full mx-auto relative after:absolute after:w-12 after:h-12 after:-bottom-1 after:-left-1 after:bg-black after:z-[-1] bg-white"
+        >
+          <div class="imagen-miembro">
+            <img
+              src="/images/equipo/img-equipo-05.webp"
+              alt="imagen del miembro del equipo taylor roberts"
+            />
+          </div>
+          <div class="info-miembro flex flex-col gap-1 items-center py-4">
+            <span class="uppercase font-semibold">taylor roberts</span>
+            <span class="capitalize text-sm">co-manager associated</span>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="max-w-[1440px] mx-auto pr-8 md:pr-12 lg:pr-16 px-4 md:px-8 lg:px-12 2xl:px-0 flex flex-col items-end justify-end lg:col-span-2 w-full relative after:absolute after:right-4 md:after:right-8 lg:after:right-12 after:top-0 after:w-2 after:h-full after:bg-black 2xl:after:hidden 2xl:border-r-10 2xl:pr-2 2xl:border-black"
+      >
+        <span
+          class="uppercase font-bold text-4xl lg:text-6xl xl:text-7xl opacity-20"
+          >equipo</span
+        >
+        <span class="texto-secundario uppercase text-lg font-medium xl:text-xl"
+          >preparado</span
+        >
+      </footer>
+    </section>
+    <section
+      class="px-4 md:px-8 lg:px-12 2xl:px-0 max-w-[1440px] mx-auto w-full pb-20 flex flex-col gap-12"
+    >
+      <header
+        class="pb-6 relative after:absolute after:h-2 after:w-24 after:bg-black after:left-0 after:bottom-0"
+      >
+        <h2 class="uppercase text-2xl md:text-3xl lg:text-4xl font-semibold">
+          ultimos blogs
+        </h2>
+      </header>
+      <div
+        class="grid gap-8 lg:grid-cols-2 lg:grid-rows-2 lg:h-[600px] xl:pr-8 xl:pl-4 xl:gap-6"
+      >
+        <div
+          class="post-small min-h-[300px] lg:min-h-full w-full relative after:absolute after:inset-0 after:bg-black/60 max-w-[700px] mx-auto"
+        >
+          <div class="imagen-post w-full h-full">
+            <img
+              src="/images/blog-pag-principal/img-blog-01.webp"
+              alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+            />
+          </div>
+          <div
+            class="post-small-info bg-black text-white py-4 pl-8 pr-2 w-[90%] flex items-center justify-start z-2 max-w-[350px] h-[100px] mx-auto absolute left-4 bottom-4 xl:-left-4"
+          >
+            <span
+              class="fecha uppercase font-bold absolute left-1 [writing-mode:vertical-rl] rotate-180 text-xs text-nowrap"
+            >
+              10 ago 2025
+            </span>
+            <span class="titulo uppercase font-bold text-2xl"
+              >titulo primer blog post</span
+            >
+          </div>
+        </div>
+        <div
+          class="post-small lg:min-h-full lg:row-start-2 lg:col-start-1 min-h-[300px] w-full relative after:absolute after:inset-0 after:bg-black/60 max-w-[700px] mx-auto"
+        >
+          <div class="imagen-post w-full h-full">
+            <img
+              src="/images/blog-pag-principal/img-blog-02.webp"
+              alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+            />
+          </div>
+          <div
+            class="post-small-info bg-black text-white py-4 pl-8 pr-2 w-[90%] flex items-center justify-start z-2 max-w-[350px] h-[100px] mx-auto absolute left-4 bottom-4 xl:-left-4"
+          >
+            <span
+              class="fecha uppercase font-bold absolute left-1 [writing-mode:vertical-rl] rotate-180 text-xs text-nowrap"
+            >
+              10 ago 2025
+            </span>
+            <span class="titulo uppercase font-bold text-2xl"
+              >titulo primer blog post</span
+            >
+          </div>
+        </div>
+        <div
+          class="post-main lg:row-span-2 h-[500px] lg:h-full max-w-[700px] mx-auto relative after:absolute after:inset-0 after:bg-black/60"
+        >
+          <div class="imagen-post-main w-full h-full">
+            <img
+              src="/images/blog-pag-principal/img-blog-03.webp"
+              alt="imagen ilustracion de arquitectura desarrollada por modern arquitectura"
+            />
+          </div>
+          <div
+            class="info-post-main absolute bottom-8 right-8 text-white z-2 w-[80%] mx-auto border-12 border-black p-4 flex flex-col gap-4 xl:-right-8"
+          >
+            <span
+              class="fecha uppercase font-bold absolute -left-10 [writing-mode:vertical-rl] rotate-180 text-sm text-nowrap lg:text-base"
+            >
+              10 ago 2025
+            </span>
+            <span class="uppercase text-xl font-semibold lg:text-3xl"
+              >Casa pequeña y minimalista en Paters, en la colina.</span
+            >
+            <p class="text-xs leading-6 lg:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+              sit nihil ab ad, neque veniam dignissimos perferendis quibusdam
+              est rem?
+            </p>
+            <button
+              class="w-fit bg-black px-6 py-4 text-white flex items-center gap-8"
+            >
+              <span class="uppercase text-xs lg:text-sm tracking-wide"
+                >leer mas</span
+              >
+              <span class="w-8 h-px bg-white"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="flex flex-col items-end justify-end pr-2 col-span-2 w-full border-r-10 border-black"
+      >
+        <span
+          class="uppercase font-bold text-5xl lg:text-6xl xl:text-7xl opacity-20"
+          >blog</span
+        >
+        <span class="texto-secundario uppercase text-lg font-medium xl:text-xl"
+          >posts</span
+        >
+      </footer>
+    </section>
+    <section class="bg-black">
+      <div
+        class="datos-main-content py-20 px-4 md:px-8 lg:px-12 2xl:px-0 max-w-[1440px] mx-auto text-white grid lg:grid-cols-2 gap-12 xl:gap-20"
+      >
+        <div
+          class="main-datos border-14 border-white p-4 md:p-8 md:py-14 lg:py-16 py-10 flex flex-col gap-4 relative after:absolute after:w-3.5 after:h-40 after:bg-black after:-right-3.5 after:top-0 after:bottom-0 after:my-auto max-w-[500px] md:max-w-[600px] mx-auto lg:max-w-full 2xl:px-12"
+        >
+          <span class="uppercase text-xl md:text-3xl lg:text-4xl 2xl:text-5xl"
+            >algunos</span
+          >
+          <span
+            class="uppercase text-2xl md:text-4xl 2xl:text-5xl font-semibold lg:leading-12"
+            >datos interesantes</span
+          >
+          <p class="text-sm md:text-base uppercase leading-8 lg:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            deleniti alias vero laudantium, sint minima?
+          </p>
+        </div>
+        <ul
+          class="sub-datos flex flex-col gap- sm:flex-row lg:flex-col xl:flex-row sm:items-center sm:justify-between max-w-[500px] md:max-w-[600px] lg:max-w-full mx-auto w-full"
+        >
+          <li class="flex flex-col gap-4 items-center">
+            <span class="uppercase text-4xl lg:text-5xl font-semibold"
+              >250</span
+            >
+            <span class="w-12 h-0.5 bg-white"></span>
+            <span class="uppercase text-xs lg:text-sm font-medium"
+              >clientes felices</span
+            >
+          </li>
+          <li class="flex flex-col gap-4 items-center">
+            <span class="uppercase text-4xl lg:text-5xl font-semibold">75</span>
+            <span class="w-12 h-0.5 bg-white"></span>
+            <span class="uppercase text-xs lg:text-sm font-medium"
+              >proyectos terminados</span
+            >
+          </li>
+          <li class="flex flex-col gap-4 items-center">
+            <span class="uppercase text-4xl lg:text-5xl font-semibold"
+              >3250</span
+            >
+            <span class="w-12 h-0.5 bg-white"></span>
+            <span class="uppercase text-xs lg:text-sm font-medium"
+              >dias trabajados</span
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="w-full relative section-testimonios">
+      <div
+        class="testimonios-main-content pt-10 pb-20 px-4 md:px-8 lg:px-12 2xl:px-0 w-full max-w-[1440px] mx-auto flex flex-col gap-12"
+      >
+        <header
+          class="pb-6 relative after:absolute after:h-2 after:w-24 after:bg-black afterleft-0 after:bottom-0"
+        >
+          <h2 class="uppercase text-2xl md:text-3xl lg:text-4xl font-semibold">
+            ultimos proyectos
+          </h2>
+        </header>
+        <div
+          class="swiper-testimonios overflow-hidden w-full max-w-[500px] md:max-w-full mx-auto pb-10 relative"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide p-1 w-full">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:-top-2 after:-left-1 after:w-[50%] after:h-[50%] after:bg-black after:z-[-1]"
+              >
+                <img
+                  src="/images/testimonios/img-testimonio-01.webp"
+                  alt="imagen de robert wilson, autor del testimonio"
+                />
+              </div>
+              <div
+                class="info-testimonio bg-white [box-shadow:2px_2px_5px_#0000002e] px-6 py-8 flex flex-col"
+              >
+                <header class="flex flex-col">
+                  <span class="font-semibold uppercase xl:text-lg"
+                    >robert wilson</span
+                  >
+                  <span class="capitalize text-xs lg:text-sm"
+                    >co-manager associated</span
+                  >
+                </header>
+                <div class="main-info mt-4">
+                  <i class="fa-solid fa-quote-left text-3xl"></i>
+                  <p class="text-xs lg:text-sm leading-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque deserunt enim voluptas, id hic tenetur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide p-1 w-full">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:-top-2 after:-left-1 after:w-[50%] after:h-[50%] after:bg-black after:z-[-1]"
+              >
+                <img
+                  src="/images/testimonios/img-testimonio-02.webp"
+                  alt="imagen de robert wilson, autor del testimonio"
+                />
+              </div>
+              <div
+                class="info-testimonio bg-white [box-shadow:2px_2px_5px_#0000002e] px-6 py-8 flex flex-col"
+              >
+                <header class="flex flex-col">
+                  <span class="font-semibold uppercase xl:text-lg"
+                    >robert wilson</span
+                  >
+                  <span class="capitalize text-xs lg:text-sm"
+                    >co-manager associated</span
+                  >
+                </header>
+                <div class="main-info mt-4">
+                  <i class="fa-solid fa-quote-left text-3xl"></i>
+                  <p class="text-xs lg:text-sm leading-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque deserunt enim voluptas, id hic tenetur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide p-1 w-full">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:-top-2 after:-left-1 after:w-[50%] after:h-[50%] after:bg-black after:z-[-1]"
+              >
+                <img
+                  src="/images/testimonios//img-testimonio-03.webp"
+                  alt="imagen de robert wilson, autor del testimonio"
+                />
+              </div>
+              <div
+                class="info-testimonio bg-white [box-shadow:2px_2px_5px_#0000002e] px-6 py-8 flex flex-col"
+              >
+                <header class="flex flex-col">
+                  <span class="font-semibold uppercase xl:text-lg"
+                    >robert wilson</span
+                  >
+                  <span class="capitalize text-xs lg:text-sm"
+                    >co-manager associated</span
+                  >
+                </header>
+                <div class="main-info mt-4">
+                  <i class="fa-solid fa-quote-left text-3xl"></i>
+                  <p class="text-xs lg:text-sm leading-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque deserunt enim voluptas, id hic tenetur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide p-1 w-full">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:-top-2 after:-left-1 after:w-[50%] after:h-[50%] after:bg-black after:z-[-1]"
+              >
+                <img
+                  src="/images/testimonios//img-testimonio-04.webp"
+                  alt="imagen de robert wilson, autor del testimonio"
+                />
+              </div>
+              <div
+                class="info-testimonio bg-white [box-shadow:2px_2px_5px_#0000002e] px-6 py-8 flex flex-col"
+              >
+                <header class="flex flex-col">
+                  <span class="font-semibold uppercase xl:text-lg"
+                    >robert wilson</span
+                  >
+                  <span class="capitalize text-xs lg:text-sm"
+                    >co-manager associated</span
+                  >
+                </header>
+                <div class="main-info mt-4">
+                  <i class="fa-solid fa-quote-left text-3xl"></i>
+                  <p class="text-xs lg:text-sm leading-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque deserunt enim voluptas, id hic tenetur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide p-1 w-full">
+              <div
+                class="imagen w-20 h-20 relative after:absolute after:-top-2 after:-left-1 after:w-[50%] after:h-[50%] after:bg-black after:z-[-1]"
+              >
+                <img
+                  src="/images/testimonios//img-testimonio-05.webp"
+                  alt="imagen de robert wilson, autor del testimonio"
+                />
+              </div>
+              <div
+                class="info-testimonio bg-white [box-shadow:2px_2px_5px_#0000002e] px-6 py-8 flex flex-col"
+              >
+                <header class="flex flex-col">
+                  <span class="font-semibold uppercase xl:text-lg"
+                    >robert wilson</span
+                  >
+                  <span class="capitalize text-xs lg:text-sm"
+                    >co-manager associated</span
+                  >
+                </header>
+                <div class="main-info mt-4">
+                  <i class="fa-solid fa-quote-left text-3xl"></i>
+                  <p class="text-xs lg:text-sm leading-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque deserunt enim voluptas, id hic tenetur?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <footer
+          class="flex flex-col items-end justify-end pr-2 col-span-2 w-full border-r-10 border-black"
+        >
+          <span
+            class="uppercase font-bold text-5xl lg:text-6xl xl:text-7xl opacity-20"
+            >clientes</span
+          >
+          <span
+            class="texto-secundario uppercase text-lg font-medium xl:text-xl"
+            >dicen</span
+          >
+        </footer>
+      </div>
+    </section>
+    <section class="bg-black">
+      <div
+        class="main-content-clientes text-white px-4 md:px-8 lg:px-12 2xl:px-0 max-w-[1440px] mx-auto pt-20 pb-10 flex flex-col gap-12 lg:flex-row"
+      >
+        <header
+          class="pb-6 relative after:absolute after:h-2 after:w-24 after:bg-white afterleft-0 after:bottom-0 lg:flex-1 lg:h-full"
+        >
+          <h2 class="uppercase text-2xl md:text-3xl lg:text-4xl font-semibold">
+            nuestros clientes
+          </h2>
+        </header>
+        <div
+          class="swiper-clientes cursor-pointer bg-white overflow-hidden lg:max-w-[750px]"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="imagen-cliente">
+                <img
+                  src="/images/clientes/w1.png"
+                  alt="imagen del cliente baliresort"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imagen-cliente">
+                <img
+                  src="/images/clientes/w2.png"
+                  alt="imagen del cliente mara"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imagen-cliente">
+                <img
+                  src="/images/clientes/w3.png"
+                  alt="imagen del cliente real state"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imagen-cliente">
+                <img
+                  src="/images/clientes/w4.png"
+                  alt="imagen del cliente studio twenty"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imagen-cliente">
+                <img
+                  src="/images/clientes/w5.png"
+                  alt="imagen del cliente new york city style"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imagen-cliente">
+                <img
+                  src="/images/clientes/w6.png"
+                  alt="imagen del cliente amie goods"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="pt-20 pb-2 w-full max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 2xl:px-0 grid sm:grid-cols-2 md:grid-cols-3 gap-12 lg:gap-x-0"
+    >
+      <a
+        href="#inicio"
+        class="logo-footer w-40 lg:w-48 2xl:w-56 h-fit sm:col-span-2 md:col-span-1"
+      >
+        <img src="/images/logo-dark.png" alt="logo de mordern arquitectura" />
+      </a>
+      <ul class="flex flex-col gap-1">
+        <li>
+          <span class="capitalize py-2 w-full inline-block"
+            >términos y condiciones</span
+          >
+        </li>
+        <li>
+          <span class="capitalize py-2 w-full inline-block"
+            >política de privacidad</span
+          >
+        </li>
+        <li>
+          <span class="capitalize py-2 w-full inline-block">carreras</span>
+        </li>
+        <li>
+          <span class="capitalize py-2 w-full inline-block">contáctanos</span>
+        </li>
+      </ul>
+      <ul class="flex flex-col gap-1">
+        <li>
+          <a class="capitalize py-2 w-full inline-block" href="#inicio"
+            >inicio</a
+          >
+        </li>
+        <li>
+          <a href="/noticias.html" class="capitalize py-2 w-full inline-block"
+            >noticias</a
+          >
+        </li>
+        <li>
+          <a href="/trabajos.html" class="capitalize py-2 w-full inline-block"
+            >trabajos</a
+          >
+        </li>
+        <li>
+          <a href="/blog.html" class="capitalize py-2 w-full inline-block"
+            >blog</a
+          >
+        </li>
+      </ul>
+      <span
+        class="w-full flex items-center justify-center uppercase text-xs font-semibold sm:col-span-2 md:col-span-3"
+        >&copy; modern arquitectura 2025</span
+      >
+    </footer>
+    <a
+      href="#inicio"
+      class="btn-scroll-top fixed bottom-4 right-4 md:bottom-8 lg:bottom-12 md:right-8 lg:right-12 bg-black z-2 text-white w-10 h-10 rounded-sm flex items-center justify-center opacity-20 hover:opacity-100"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="/app.js"></script>
   </body>
 </html>

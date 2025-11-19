@@ -33,28 +33,28 @@
         <ul class="flex gap-4 items-center">
           <li>
             <a
-              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base hover:bg-black hover:text-white rounded-xs transition-colors"
               href="/index.html"
               >inicio</a
             >
           </li>
           <li>
             <a
-              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base hover:bg-black hover:text-white rounded-xs transition-colors"
               href="/noticias.html"
               >noticias</a
             >
           </li>
           <li>
             <a
-              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base hover:bg-black hover:text-white rounded-xs transition-colors"
               href="/trabajos.html"
               >trabajos</a
             >
           </li>
           <li>
             <a
-              class="px-6 py-2 capitalize font-medium text-sm lg:text-base"
+              class="px-6 py-2 capitalize font-medium text-sm lg:text-base hover:bg-black hover:text-white rounded-xs transition-colors"
               href="/blog.html"
               >blog</a
             >
@@ -260,12 +260,14 @@
           nobis reiciendis.
         </p>
         <button
-          class="w-fit bg-black px-6 py-4 text-white flex items-center gap-8"
+          class="w-fit bg-black px-6 py-4 text-white flex items-center gap-8 cursor-pointer group"
         >
           <span class="uppercase text-xs lg:text-sm tracking-wide"
             >leer mas</span
           >
-          <span class="w-8 h-px bg-white"></span>
+          <span
+            class="w-8 h-px bg-white relative group-hover:translate-x-2 transition-transform"
+          ></span>
         </button>
       </div>
       <div
@@ -1047,7 +1049,9 @@
             nuestros clientes
           </h2>
         </header>
-        <div class="swiper-clientes bg-white overflow-hidden lg:max-w-[750px]">
+        <div
+          class="swiper-clientes cursor-pointer bg-white overflow-hidden lg:max-w-[750px]"
+        >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="imagen-cliente">
@@ -1134,9 +1138,21 @@
             >inicio</a
           >
         </li>
-        <li><a class="capitalize py-2 w-full inline-block">noticias</a></li>
-        <li><a class="capitalize py-2 w-full inline-block">trabajos</a></li>
-        <li><a class="capitalize py-2 w-full inline-block">blog</a></li>
+        <li>
+          <a href="/noticias.html" class="capitalize py-2 w-full inline-block"
+            >noticias</a
+          >
+        </li>
+        <li>
+          <a href="/trabajos.html" class="capitalize py-2 w-full inline-block"
+            >trabajos</a
+          >
+        </li>
+        <li>
+          <a href="/blog.html" class="capitalize py-2 w-full inline-block"
+            >blog</a
+          >
+        </li>
       </ul>
       <span
         class="w-full flex items-center justify-center uppercase text-xs font-semibold sm:col-span-2 md:col-span-3"
